@@ -1,15 +1,22 @@
 # CEB Rodrigues Field — marketing site
 
-Product page for **CEB Rodrigues Field** at [ceb.mkweli.tech](https://ceb.mkweli.tech).
+Product page for **CEB Rodrigues Field**.
 
-Part of the [mkweli.tech](https://mkweli.tech) portfolio.
+- **Live preview:** https://gilbertbouic.github.io/ceb-website/
+- **Custom domain (after DNS):** https://ceb.mkweli.tech
 
-## DNS (Hostinger)
+## Hostinger DNS (required)
 
-| Type | Name | Value |
-|------|------|-------|
-| CNAME | `ceb` | `gilbertbouic.github.io` |
+Domains → mkweli.tech → DNS — add:
 
-## Deploy
+| Type  | Name | Value                   | TTL  |
+|-------|------|-------------------------|------|
+| CNAME | `ceb`| `gilbertbouic.github.io`| 3600 |
 
-GitHub Pages from `main` / root. Custom domain: `ceb.mkweli.tech`.
+Same pattern as `aml` and `lakazagri`.
+
+After DNS propagates, GitHub Pages will issue HTTPS for `ceb.mkweli.tech` (repo already has `CNAME` file).
+
+## Stack
+
+Static HTML/CSS/JS on GitHub Pages.
