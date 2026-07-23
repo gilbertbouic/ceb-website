@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEB Rodrigues Field — Offline generation &amp; O&amp;M for the isolated grid</title>
+  <meta name="description" content="Free offline-first Android app for CEB Rodrigues field operators: generation logging by source, maintenance work orders, exports, and local Modbus reads. Complements mainland SCADA — does not replace it." />
+  <meta name="theme-color" content="#071E2E" />
+  <link rel="canonical" href="https://ceb.mkweli.tech/" />
+  <meta property="og:title" content="CEB Rodrigues Field — Offline field toolkit" />
+  <meta property="og:description" content="Generation dashboard, work orders, and structured export for the isolated Rodrigues grid. Offline-first Android APK." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ceb.mkweli.tech/" />
+  <meta property="og:image" content="https://ceb.mkweli.tech/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="CEB Rodrigues Field home">
+        <img src="assets/logo.png" alt="" width="40" height="40" class="brand-mark" />
+        <span class="brand-text">
+          <strong>CEB Rodrigues</strong>
+          <span>Field</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#sites">Sites</a>
+        <a href="#how">How it works</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#features">Features</a>
+      <a href="#sites">Sites</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+      <a href="https://mkweli.tech/">mkweli.tech</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot"></span>
+            Free · Offline-first · Rodrigues isolated grid
+          </p>
+          <h1>
+            Field ops for CEB Rodrigues<br />
+            <em>when the control room is far away.</em>
+          </h1>
+          <p class="lede">
+            <strong>CEB Rodrigues Field</strong> is an Android toolkit for generation monitoring,
+            maintenance work orders, and structured export on the isolated Rodrigues grid —
+            built for sites with intermittent connectivity. Complements mainland ADMS, SCADA,
+            MoKouran and smart meters. It does <strong>not</strong> replace control-room systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Request pilot access</a>
+            <a class="btn btn-ghost" href="#features">See capabilities</a>
+          </div>
+          <ul class="hero-stats" aria-label="Highlights">
+            <li><strong>Offline-first</strong><span>Room SQLite on device</span></li>
+            <li><strong>Multi-source</strong><span>Wind · solar · thermal · BESS</span></li>
+            <li><strong>v0.3</strong><span>Full field toolkit</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="assets/logo.png" alt="CEB Rodrigues Field mark" width="200" height="200" />
+            <p class="hero-card-label">mu.ceb.rodrigues.field</p>
+            <p class="hero-card-sub">Apache-2.0 · free to use &amp; modify</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section notice">
+      <div class="container notice-panel">
+        <p>
+          <strong>Not an official CEB product</strong> unless adopted by the Central Electricity Board.
+          Operational models are structured for CEB-style reporting and must be validated with
+          Rodrigues operations before production use.
+        </p>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Everything a field crew needs offline</h2>
+          <p class="section-lede">
+            Log generation, open work orders with photos, export reports, and optionally read
+            local Modbus gateways — without waiting on the mainland WAN.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Generation dashboard</h3>
+            <p>kWh by source with period filters: today, 7 days, 30 days, month, or all time. Built for Rodrigues local day (UTC+4).</p>
+          </article>
+          <article class="feature-card">
+            <h3>Offline logging</h3>
+            <p>Every write hits Room SQLite immediately. Correct mistakes in the field. Fully usable with no network.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Maintenance work orders</h3>
+            <p>Create, filter, and move WOs through a status lifecycle. Attach camera or gallery photos on site.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Asset registry</h3>
+            <p>Seeded for Pointe Monnier, Port Mathurin, Grenade, Trèfles wind, SSDG/MSDG pool, and more.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Share exports</h3>
+            <p>CSV, JSON, and PDF via the Android share sheet for email, USB hand-off, or later aggregation.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Modbus TCP (optional)</h3>
+            <p>Read-only holding registers from local gateways on LAN/VPN — never expose industrial protocols to the public internet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sites" id="sites">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Rodrigues context</p>
+          <h2>Built for the isolated grid</h2>
+          <p class="section-lede">
+            Thermal, wind, solar and storage across the island — field sites often have intermittent
+            connectivity, so offline-first is mandatory.
+          </p>
+        </div>
+        <div class="site-grid">
+          <article class="site-card"><h3>Pointe Monnier</h3><p>Thermal + BESS (~1.5&nbsp;MW storage context)</p></article>
+          <article class="site-card"><h3>Port Mathurin</h3><p>Thermal / operations hub</p></article>
+          <article class="site-card"><h3>Grenade</h3><p>Wind + PV farm context</p></article>
+          <article class="site-card"><h3>Trèfles</h3><p>Wind generation</p></article>
+          <article class="site-card"><h3>SSDG / MSDG pool</h3><p>Distributed small generators</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container how-grid">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>From phone to structured report</h2>
+          <ol class="steps">
+            <li>
+              <span class="step-n">1</span>
+              <div>
+                <h3>Install the field APK</h3>
+                <p>Android side-load for pilot crews. Operator profile auto-fills “recorded by”.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n">2</span>
+              <div>
+                <h3>Log generation &amp; work</h3>
+                <p>Capture kWh by source and open maintenance tickets with photos while offline.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n">3</span>
+              <div>
+                <h3>Export or sync</h3>
+                <p>Share CSV/JSON/PDF now; background sync to a future edge API when connectivity returns.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <aside class="compare-panel">
+          <h3>Complements, does not replace</h3>
+          <ul>
+            <li><strong>MoKouran</strong> — customer bills · this app is operator field O&amp;M</li>
+            <li><strong>ADMS / SCADA</strong> — central control · this app is offline site logging</li>
+            <li><strong>Smart meters</strong> — customer metering · this app is source-level kWh + work orders</li>
+          </ul>
+          <p class="compare-note">Designed for the isolated Rodrigues system, not as a mainland replacement stack.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-panel">
+        <div class="contact-copy">
+          <p class="eyebrow">Pilot &amp; partnership</p>
+          <h2>Bring the field toolkit to Rodrigues crews</h2>
+          <p>
+            Request a pilot build, discuss validation with operations, or explore hosting and
+            edge-sync options. Built under Mkweli.tech by Gilbert Bouic.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="mailto:gilbert@mkweli.tech?subject=CEB%20Rodrigues%20Field%20pilot">gilbert@mkweli.tech</a>
+            <a class="btn btn-ghost light" href="https://mkweli.tech/">mkweli.tech hub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <img src="assets/logo.png" alt="" width="36" height="36" class="brand-mark" />
+          <span class="brand-text">
+            <strong>CEB Rodrigues</strong>
+            <span>Field</span>
+          </span>
+        </a>
+        <p>Offline field toolkit for the Rodrigues isolated grid. Free software · Apache-2.0.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#sites">Sites</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Mkweli network</h4>
+        <a href="https://mkweli.tech/">mkweli.tech</a>
+        <a href="https://aml.mkweli.tech/">Mkweli AML</a>
+        <a href="https://lakazagri.mkweli.tech/">LakazAgri</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Gilbert Bouic · Mkweli.tech — Not affiliated with CEB unless adopted.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
