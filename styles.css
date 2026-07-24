@@ -251,6 +251,67 @@ a:hover { color: var(--coral); }
 .compare-panel strong { color: var(--text); }
 .compare-note { margin: 0; font-size: 0.88rem; color: var(--text-dim); }
 
+/* Download / pilot build */
+.download-panel {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.download-main,
+.download-limits {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--shadow);
+}
+.download-version {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+.download-version code,
+.download-hash code {
+  font-size: 0.82rem;
+  word-break: break-all;
+  color: var(--teal-soft);
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.15rem 0.4rem;
+  border-radius: 6px;
+}
+.download-hash {
+  margin: 1.1rem 0 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.download-url {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+.download-limits h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  color: #fff;
+}
+.download-limits h3 + ul,
+.download-limits h3 + ol {
+  margin: 0 0 1.1rem;
+  padding-left: 1.15rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+.download-limits li { margin-bottom: 0.35rem; }
+
+@media (max-width: 800px) {
+  .download-panel { grid-template-columns: 1fr; }
+}
+
 .contact-panel {
   padding: clamp(2rem, 4vw, 3rem); border-radius: 20px;
   background:
