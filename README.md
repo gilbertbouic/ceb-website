@@ -21,12 +21,21 @@ After DNS propagates, GitHub Pages will issue HTTPS for `ceb.mkweli.tech` (repo 
 
 Static HTML/CSS/JS on GitHub Pages.
 
-## Pilot APK
+## Pilot APK (GitHub Releases)
 
-Signed evaluation build is served from this site:
+The signed evaluation build is **hosted on GitHub Releases**. The product page only links to it.
 
-- **URL:** https://ceb.mkweli.tech/downloads/ceb-rodrigues-field-0.3.1-pilot.apk
-- **File:** `downloads/ceb-rodrigues-field-0.3.1-pilot.apk`
+- **Release:** https://github.com/gilbertbouic/ceb-website/releases/tag/v0.3.1-pilot
+- **Direct APK:** https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.1-pilot/ceb-rodrigues-field-0.3.1-pilot.apk
+- **Product page:** https://ceb.mkweli.tech/#download
 - **SHA-256:** `0d3b00698faeb165a186a83f3fdc0764ddbebe30fa7370ca91be5919e49dbe44`
 
-Rebuild from the `ceb` / `field-apk` project (`./gradlew assembleRelease`), copy into `downloads/`, update the SHA-256 on the site, then push.
+Publish a new build:
+
+```bash
+# from field-apk
+./gradlew assembleRelease
+gh release create vX.Y.Z-pilot dist/ceb-rodrigues-field-….apk \
+  --repo gilbertbouic/ceb-website --title "…" --notes "…"
+# then update download URLs + SHA-256 on this site and push
+```
