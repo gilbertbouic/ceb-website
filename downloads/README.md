@@ -8,4 +8,4 @@ https://github.com/gilbertbouic/ceb-website/releases
 
 Current pilot:
 
-https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.1-pilot/ceb-rodrigues-field-0.3.1-pilot.apk
+https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.2-pilot/ceb-rodrigues-field-0.3.2-pilot.apk

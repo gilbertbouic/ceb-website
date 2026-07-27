@@ -25,8 +25,8 @@ Static HTML/CSS/JS on GitHub Pages.
 
 The signed evaluation build is **hosted on GitHub Releases**. The product page only links to it.
 
-- **Release:** https://github.com/gilbertbouic/ceb-website/releases/tag/v0.3.1-pilot
-- **Direct APK:** https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.1-pilot/ceb-rodrigues-field-0.3.1-pilot.apk
+- **Release:** https://github.com/gilbertbouic/ceb-website/releases/tag/v0.3.2-pilot
+- **Direct APK:** https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.2-pilot/ceb-rodrigues-field-0.3.2-pilot.apk
 - **Product page:** https://ceb.mkweli.tech/#download
 - **SHA-256:** `0d3b00698faeb165a186a83f3fdc0764ddbebe30fa7370ca91be5919e49dbe44`
 
