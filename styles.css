@@ -373,3 +373,11 @@ a:hover { color: var(--coral); }
   .btn:hover, .feature-card:hover { transform: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+.mkweli-parent-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+.mkweli-parent-link img { display: inline-block; }
