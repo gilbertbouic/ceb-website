@@ -288,6 +288,14 @@ a:hover { color: var(--coral); }
   flex-direction: column;
   gap: 0.35rem;
 }
+.dl-counter {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: var(--text-dim);
+  opacity: 0.8;
+}
 .download-url {
   margin: 0.5rem 0 0;
   font-size: 0.9rem;
