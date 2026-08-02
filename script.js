@@ -86,7 +86,14 @@
           render(last + 1);
         });
     };
-    document.querySelectorAll("[data-dl-link]").forEach((a) => {
+    const isApkHref = (h) => /\.apk($|[?#])/i.test(h || "");
+    document.querySelectorAll("a[href]").forEach((a) => {
+      const href = a.getAttribute("href") || "";
+      if (!isApkHref(href)) {
+        a.removeAttribute("data-dl-link");
+        return;
+      }
+      a.setAttribute("data-dl-link", "");
       a.addEventListener("click", track);
     });
   })();
