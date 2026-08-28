@@ -1,7 +1,7 @@
 # Mkweli Grid — marketing site
 
 Product page for **Mkweli Grid** (offline field toolkit for isolated and rural grids).
-First pilot: Rodrigues, Mauritius.
+Evaluation APK. Sample sites follow an isolated-grid layout.
 
 - **Live:** https://ceb.mkweli.tech
 - **App repo:** https://github.com/gilbertbouic/ceb
@@ -14,7 +14,7 @@ Domains → mkweli.tech → DNS:
 |-------|------|-------------------------|------|
 | CNAME | `ceb`| `gilbertbouic.github.io`| 3600 |
 
-Same pattern as `aml` and `lakazagri`. Subdomain stays `ceb.mkweli.tech` during the Rodrigues pilot.
+Same pattern as `aml` and `lakazagri`. Subdomain stays `ceb.mkweli.tech` for now.
 
 ## Stack
 

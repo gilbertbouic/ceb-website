@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mkweli Grid — Offline generation &amp; O&amp;M for isolated grids</title>
-  <meta name="description" content="Offline-first Android app for field operators on isolated and rural grids: generation logging by source, maintenance work orders, exports, and local Modbus reads. First pilot: Rodrigues. Complements SCADA — does not replace it." />
+  <meta name="description" content="Offline-first Android app for field operators on isolated and rural grids: generation logging by source, maintenance work orders, exports, and local Modbus reads. Evaluation APK — no operator deployment yet. Complements SCADA — does not replace it." />
   <meta name="theme-color" content="#071E2E" />
   <link rel="canonical" href="https://ceb.mkweli.tech/" />
   <meta property="og:title" content="Mkweli Grid — Offline field toolkit" />
-  <meta property="og:description" content="Generation dashboard, work orders, and structured export for isolated and rural grids. First pilot: Rodrigues. Offline-first Android APK." />
+  <meta property="og:description" content="Generation dashboard, work orders, and structured export for isolated and rural grids. Evaluation APK. Offline-first Android." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ceb.mkweli.tech/" />
   <meta property="og:image" content="https://ceb.mkweli.tech/assets/og-image.png" />
@@ -38,6 +38,11 @@
         <a href="#how">How it works</a>
         <a href="#download">Download</a>
         <a href="#contact" class="nav-cta">Contact</a>
+        <span class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </span>
       </nav>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span>
@@ -50,6 +55,11 @@
       <a href="#download">Download</a>
       <a href="#contact">Contact</a>
       <a href="https://mkweli.tech/">mkweli.tech</a>
+      <span class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </span>
     </div>
   </header>
 
@@ -62,16 +72,16 @@
             <span class="dot"></span>
             Free · Offline-first · Isolated and rural grids
           </p>
-          <h1>
+          <h1 data-i18n-html="hero_h1">
             Field ops for isolated grids<br />
             <em>when the control room is far away.</em>
           </h1>
-          <p class="lede">
+          <p class="lede" data-i18n-html="hero_lede">
             <strong>Mkweli Grid</strong> is an Android toolkit for generation monitoring,
             maintenance work orders, and structured export on isolated and rural grids —
-            built for sites with intermittent connectivity. First pilot: Rodrigues.
-            Complements ADMS, SCADA, billing and smart meters. It does <strong>not</strong>
-            replace control-room systems.
+            built for sites with intermittent connectivity. Evaluation build — not yet
+            deployed with an operator. Complements ADMS, SCADA, billing and smart meters.
+            It does <strong>not</strong> replace control-room systems.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" data-dl-link href="https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.2-pilot/ceb-rodrigues-field-0.3.2-pilot.apk">
@@ -101,7 +111,7 @@
         <p>
           <strong>Not an official utility product</strong> unless adopted by a grid operator.
           Operational models must be validated with local operations before production use.
-          First pilot geography: Rodrigues, Mauritius.
+          Seeded example sites follow an isolated-grid layout (thermal, wind, solar, storage).
         </p>
       </div>
     </section>
@@ -148,7 +158,7 @@
     <section class="section sites" id="sites">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">First pilot · Rodrigues</p>
+          <p class="eyebrow">Sample isolated-grid layout</p>
           <h2>Built for the isolated grid</h2>
           <p class="section-lede">
             Thermal, wind, solar and storage across the island — field sites often have intermittent
@@ -206,7 +216,7 @@
             <li><strong>ADMS / SCADA</strong> — central control · this app is offline site logging</li>
             <li><strong>Smart meters</strong> — customer metering · this app is source-level kWh + work orders</li>
           </ul>
-          <p class="compare-note">Designed for isolated and rural grids, not as a control-room replacement stack. Rodrigues is the first pilot.</p>
+          <p class="compare-note">Designed for isolated and rural grids, not as a control-room replacement stack. No operator has adopted it yet.</p>
         </aside>
       </div>
     </section>
@@ -275,7 +285,7 @@
           <p class="eyebrow">Pilot &amp; partnership</p>
           <h2>Bring the field toolkit to isolated-grid crews</h2>
           <p>
-            Download the Rodrigues pilot above, discuss validation with operations, or explore hosting and
+            Download the evaluation APK above, discuss a trial with operations, or explore hosting and
             edge-sync options. Built under Mkweli.tech by Gilbert Clement Bouic.
           </p>
           <div class="contact-actions">
@@ -298,7 +308,7 @@
             <span>Grid</span>
           </span>
         </a>
-        <p>Offline field toolkit for isolated and rural grids. First pilot: Rodrigues.</p>
+        <p>Offline field toolkit for isolated and rural grids. Evaluation APK.</p>
       </div>
       <div class="footer-col">
         <h4>Product</h4>

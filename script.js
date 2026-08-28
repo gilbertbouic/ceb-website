@@ -97,4 +97,49 @@
       a.addEventListener("click", track);
     });
   })();
+
+  const i18n = {
+    en: {
+      hero_h1: "Field ops for isolated grids<br /><em>when the control room is far away.</em>",
+      hero_lede:
+        "<strong>Mkweli Grid</strong> is an Android toolkit for generation monitoring, maintenance work orders, and structured export on isolated and rural grids — built for sites with intermittent connectivity. Evaluation build — not yet deployed with an operator. Complements ADMS, SCADA, billing and smart meters. It does <strong>not</strong> replace control-room systems."
+    },
+    fr: {
+      hero_h1: "Opérations de terrain pour réseaux isolés<br /><em>quand la salle de contrôle est loin.</em>",
+      hero_lede:
+        "<strong>Mkweli Grid</strong> est une application Android pour le suivi de production, les ordres de travail et l’export structuré sur les réseaux isolés et ruraux — conçue pour les sites à connectivité intermittente. Version d’évaluation — pas encore déployée chez un opérateur. Elle complète ADMS, SCADA, facturation et compteurs. Elle ne <strong>remplace pas</strong> les systèmes de conduite."
+    },
+    pt: {
+      hero_h1: "Operações de campo para redes isoladas<br /><em>quando a sala de controlo fica longe.</em>",
+      hero_lede:
+        "<strong>Mkweli Grid</strong> é uma aplicação Android para monitorização da produção, ordens de trabalho e exportação estruturada em redes isoladas e rurais — feita para sítios com conectividade intermitente. Compilação de avaliação — ainda sem operador. Complementa ADMS, SCADA, faturação e contadores. <strong>Não</strong> substitui os sistemas de controlo."
+    }
+  };
+
+  const applyLang = (lang) => {
+    const pack = i18n[lang] || i18n.en;
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-html");
+      if (pack[key]) el.innerHTML = pack[key];
+    });
+    document.querySelectorAll(".lang-switch button").forEach((btn) => {
+      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
+    });
+    try {
+      localStorage.setItem("mkweli-grid-lang", lang);
+    } catch (_) {}
+  };
+
+  document.querySelectorAll(".lang-switch button").forEach((btn) => {
+    btn.addEventListener("click", () => applyLang(btn.getAttribute("data-lang")));
+  });
+  const saved = (() => {
+    try {
+      return localStorage.getItem("mkweli-grid-lang");
+    } catch (_) {
+      return null;
+    }
+  })();
+  if (saved && i18n[saved]) applyLang(saved);
 })();

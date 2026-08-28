@@ -95,6 +95,31 @@ a:hover { color: var(--coral); }
 }
 .nav-cta:hover { filter: brightness(1.08); color: #fff !important; }
 
+.lang-switch {
+  display: inline-flex;
+  gap: 0.15rem;
+  margin-left: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 0.15rem;
+}
+.lang-switch button {
+  background: transparent;
+  border: 0;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+}
+.lang-switch button[aria-pressed="true"] {
+  background: var(--teal);
+  color: #fff;
+}
+
 .nav-toggle {
   display: none; width: 42px; height: 42px;
   border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px;
