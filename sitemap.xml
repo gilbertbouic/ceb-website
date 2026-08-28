@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ceb.mkweli.tech/</loc>
+    <loc>https://grid.mkweli.tech/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://github.com/gilbertbouic/ceb-website/releases/tag/v0.3.1-pilot</loc>
+    <loc>https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,39 +1,38 @@
 # Mkweli Grid — marketing site
 
-Product page for **Mkweli Grid** (offline field toolkit for isolated and rural grids).
-Evaluation APK. Sample sites follow an isolated-grid layout.
+Product page for **Mkweli Grid**.
 
-- **Live:** https://ceb.mkweli.tech
+- **Live:** https://grid.mkweli.tech
 - **App repo:** https://github.com/gilbertbouic/ceb
 
 ## Hostinger DNS
 
 Domains → mkweli.tech → DNS:
 
-| Type  | Name | Value                   | TTL  |
-|-------|------|-------------------------|------|
-| CNAME | `ceb`| `gilbertbouic.github.io`| 3600 |
+| Type  | Name | Value                    | TTL  |
+|-------|------|--------------------------|------|
+| CNAME | `grid` | `gilbertbouic.github.io` | 3600 |
+| URL redirect (optional) | `ceb` | `https://grid.mkweli.tech` | — |
 
-Same pattern as `aml` and `lakazagri`. Subdomain stays `ceb.mkweli.tech` for now.
+After DNS, GitHub Pages issues HTTPS for `grid.mkweli.tech` (see `CNAME`).
 
 ## Stack
 
 Static HTML/CSS/JS on GitHub Pages.
 
-## Pilot APK (GitHub Releases)
+## Evaluation APK
 
-The signed evaluation build is **hosted on GitHub Releases**. The product page only links to it.
+Hosted on this site (not GitHub Releases):
 
-- **Release:** https://github.com/gilbertbouic/ceb-website/releases/tag/v0.3.2-pilot
-- **Direct APK:** https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.2-pilot/ceb-rodrigues-field-0.3.2-pilot.apk
-- **Product page:** https://ceb.mkweli.tech/#download
-- **SHA-256:** `0d3b00698faeb165a186a83f3fdc0764ddbebe30fa7370ca91be5919e49dbe44`
+- **Product page:** https://grid.mkweli.tech/#download
+- **Direct APK:** https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk
 
-Publish a new build from the [ceb](https://github.com/gilbertbouic/ceb) app repo:
+Publish a new build from the app repo:
 
 ```bash
 ./gradlew assembleRelease
-gh release create vX.Y.Z-pilot dist/…apk \
-  --repo gilbertbouic/ceb-website --title "Mkweli Grid …" --notes "…"
-# then update download URLs + SHA-256 on this site and push
+cp app/build/outputs/apk/release/app-release.apk \
+  ../ceb-website/downloads/mkweli-grid-X.Y.Z.apk
+sha256sum ../ceb-website/downloads/mkweli-grid-X.Y.Z.apk
+# update download URLs + SHA-256 on this site and push
 ```

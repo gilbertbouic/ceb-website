@@ -1,11 +1,5 @@
 # Downloads
 
-APK binaries are **not** stored in this folder.
+Current evaluation APK:
 
-Hosted on GitHub Releases:
-
-https://github.com/gilbertbouic/ceb-website/releases
-
-Current pilot:
-
-https://github.com/gilbertbouic/ceb-website/releases/download/v0.3.2-pilot/ceb-rodrigues-field-0.3.2-pilot.apk
+https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk
