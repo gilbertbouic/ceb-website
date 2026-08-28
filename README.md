@@ -1,21 +1,20 @@
-# CEB Rodrigues Field — marketing site
+# Mkweli Grid — marketing site
 
-Product page for **CEB Rodrigues Field**.
+Product page for **Mkweli Grid** (offline field toolkit for isolated and rural grids).
+First pilot: Rodrigues, Mauritius.
 
-- **Live preview:** https://gilbertbouic.github.io/ceb-website/
-- **Custom domain (after DNS):** https://ceb.mkweli.tech
+- **Live:** https://ceb.mkweli.tech
+- **App repo:** https://github.com/gilbertbouic/ceb
 
-## Hostinger DNS (required)
+## Hostinger DNS
 
-Domains → mkweli.tech → DNS — add:
+Domains → mkweli.tech → DNS:
 
 | Type  | Name | Value                   | TTL  |
 |-------|------|-------------------------|------|
 | CNAME | `ceb`| `gilbertbouic.github.io`| 3600 |
 
-Same pattern as `aml` and `lakazagri`.
-
-After DNS propagates, GitHub Pages will issue HTTPS for `ceb.mkweli.tech` (repo already has `CNAME` file).
+Same pattern as `aml` and `lakazagri`. Subdomain stays `ceb.mkweli.tech` during the Rodrigues pilot.
 
 ## Stack
 
@@ -30,12 +29,11 @@ The signed evaluation build is **hosted on GitHub Releases**. The product page o
 - **Product page:** https://ceb.mkweli.tech/#download
 - **SHA-256:** `0d3b00698faeb165a186a83f3fdc0764ddbebe30fa7370ca91be5919e49dbe44`
 
-Publish a new build:
+Publish a new build from the [ceb](https://github.com/gilbertbouic/ceb) app repo:
 
 ```bash
-# from field-apk
 ./gradlew assembleRelease
-gh release create vX.Y.Z-pilot dist/ceb-rodrigues-field-….apk \
-  --repo gilbertbouic/ceb-website --title "…" --notes "…"
+gh release create vX.Y.Z-pilot dist/…apk \
+  --repo gilbertbouic/ceb-website --title "Mkweli Grid …" --notes "…"
 # then update download URLs + SHA-256 on this site and push
 ```

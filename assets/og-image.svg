@@ -8,7 +8,7 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <circle cx="980" cy="120" r="220" fill="#14919B" opacity="0.18"/>
   <circle cx="200" cy="500" r="180" fill="#E07A5F" opacity="0.12"/>
-  <text x="80" y="250" font-family="Georgia, serif" font-size="64" fill="#F4F1EA">CEB Rodrigues Field</text>
-  <text x="80" y="320" font-family="system-ui,sans-serif" font-size="32" fill="#7FD4D7">Offline generation &amp; O&amp;M for the isolated grid</text>
+  <text x="80" y="250" font-family="Georgia, serif" font-size="64" fill="#F4F1EA">Mkweli Grid</text>
+  <text x="80" y="320" font-family="system-ui,sans-serif" font-size="32" fill="#7FD4D7">Offline generation &amp; O&amp;M for isolated grids</text>
   <text x="80" y="400" font-family="system-ui,sans-serif" font-size="24" fill="#C5D0D8">ceb.mkweli.tech · free field APK</text>
 </svg>
