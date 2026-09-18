@@ -1,4 +1,4 @@
-# Mkweli Grid — marketing site
+# Mkweli Grid - marketing site
 
 Product page for **Mkweli Grid**.
 
@@ -12,7 +12,7 @@ Domains → mkweli.tech → DNS:
 | Type  | Name | Value                    | TTL  |
 |-------|------|--------------------------|------|
 | CNAME | `grid` | `gilbertbouic.github.io` | 3600 |
-| URL redirect (optional) | `ceb` | `https://grid.mkweli.tech` | — |
+| URL redirect (optional) | `ceb` | `https://grid.mkweli.tech` | - |
 
 After DNS, GitHub Pages issues HTTPS for `grid.mkweli.tech` (see `CNAME`).
 

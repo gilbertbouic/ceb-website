@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mkweli Grid — Offline generation &amp; O&amp;M for isolated grids</title>
-  <meta name="description" content="Offline-first Android app for field operators on isolated and rural grids: generation logging by source, maintenance work orders, exports, and local Modbus reads. Evaluation APK — no operator deployment yet. Complements SCADA — does not replace it." />
+  <title>Mkweli Grid - Offline generation &amp; O&amp;M for isolated grids</title>
+  <meta name="description" content="Offline-first Android app for field operators on isolated and rural grids: generation logging by source, maintenance work orders, exports, and local Modbus reads. Evaluation APK - no operator deployment yet. Complements SCADA - does not replace it." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#071E2E" />
   <link rel="canonical" href="https://grid.mkweli.tech/" />
-  <meta property="og:title" content="Mkweli Grid — Offline field toolkit" />
+  <meta property="og:title" content="Mkweli Grid - Offline field toolkit" />
   <meta property="og:description" content="Generation dashboard, work orders, and structured export for isolated and rural grids. Evaluation APK. Offline-first Android." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://grid.mkweli.tech/" />
@@ -22,41 +22,41 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Mkweli Grid home">
+      <a class="brand" href="#top" data-i18n-aria="aria_home" aria-label="Mkweli Grid home">
         <img src="assets/logo.png" alt="" width="40" height="40" class="brand-mark" />
         <span class="brand-text">
           <strong>Mkweli</strong>
           <span>Grid</span>
         </span>
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#features">Features</a>
-        <a href="#sites">Sites</a>
-        <a href="#how">How it works</a>
-        <a href="#download">Download</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-        <span class="lang-switch" role="group" aria-label="Language">
+      <nav class="nav" data-i18n-aria="aria_nav" aria-label="Primary">
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#sites" data-i18n="nav_sites">Sites</a>
+        <a href="#how" data-i18n="nav_how">How it works</a>
+        <a href="#download" data-i18n="nav_download">Download</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a>
+        <span class="lang-switch" role="group" data-i18n-aria="aria_lang" aria-label="Language">
           <button type="button" data-lang="en" aria-pressed="true">EN</button>
           <button type="button" data-lang="fr" aria-pressed="false">FR</button>
           <button type="button" data-lang="pt" aria-pressed="false">PT</button>
         </span>
       </nav>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <button class="nav-toggle" type="button" data-i18n-aria="aria_menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span>
       </button>
     </div>
     <div class="mobile-nav" id="mobile-nav" hidden>
-      <a href="#features">Features</a>
-      <a href="#sites">Sites</a>
-      <a href="#how">How it works</a>
-      <a href="#download">Download</a>
-      <a href="#contact">Contact</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#sites" data-i18n="nav_sites">Sites</a>
+      <a href="#how" data-i18n="nav_how">How it works</a>
+      <a href="#download" data-i18n="nav_download">Download</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
       <a href="https://mkweli.tech/">mkweli.tech</a>
-      <span class="lang-switch" role="group" aria-label="Language">
+      <span class="lang-switch" role="group" data-i18n-aria="aria_lang" aria-label="Language">
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-lang="fr" aria-pressed="false">FR</button>
         <button type="button" data-lang="pt" aria-pressed="false">PT</button>
@@ -71,7 +71,7 @@
         <div class="hero-copy">
           <p class="eyebrow">
             <span class="dot"></span>
-            Free · Offline-first · Isolated and rural grids
+            <span data-i18n="hero_eyebrow">Free · Offline-first · Isolated and rural grids</span>
           </p>
           <h1 data-i18n-html="hero_h1">
             Field ops for isolated grids<br />
@@ -79,29 +79,29 @@
           </h1>
           <p class="lede" data-i18n-html="hero_lede">
             <strong>Mkweli Grid</strong> is an Android toolkit for generation monitoring,
-            maintenance work orders, and structured export on isolated and rural grids —
-            built for sites with intermittent connectivity. Evaluation build — not yet
+            maintenance work orders, and structured export on isolated and rural grids -
+            built for sites with intermittent connectivity. Evaluation build - not yet
             deployed with an operator. Complements ADMS, SCADA, billing and smart meters.
             It does <strong>not</strong> replace control-room systems.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" data-dl-link href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">
+            <a class="btn btn-primary" data-dl-link data-i18n="btn_dl_eval" href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">
               Download evaluation APK
             </a>
-            <a class="btn btn-ghost" href="#download">Install notes</a>
-            <a class="btn btn-ghost" href="#features">See capabilities</a>
+            <a class="btn btn-ghost" href="#download" data-i18n="btn_install_notes">Install notes</a>
+            <a class="btn btn-ghost" href="#features" data-i18n="btn_see_capabilities">See capabilities</a>
           </div>
-          <ul class="hero-stats" aria-label="Highlights">
-            <li><strong>Offline-first</strong><span>Room SQLite on device</span></li>
-            <li><strong>Multi-source</strong><span>Wind · solar · thermal · BESS</span></li>
-            <li><strong>v0.3.3</strong><span>Signed evaluation build</span></li>
+          <ul class="hero-stats" data-i18n-aria="aria_highlights" aria-label="Highlights">
+            <li><strong data-i18n="stat_offline">Offline-first</strong><span data-i18n="stat_offline_sub">Room SQLite on device</span></li>
+            <li><strong data-i18n="stat_multi">Multi-source</strong><span data-i18n="stat_multi_sub">Wind · solar · thermal · BESS</span></li>
+            <li><strong>v0.3.3</strong><span data-i18n="stat_ver_sub">Signed evaluation build</span></li>
           </ul>
         </div>
         <div class="hero-visual">
           <div class="hero-card">
             <img src="assets/logo.png" alt="Mkweli Grid mark" width="200" height="200" />
             <p class="hero-card-label">grid.mkweli.tech</p>
-            <p class="hero-card-sub">Apache-2.0 · free to use &amp; modify</p>
+            <p class="hero-card-sub" data-i18n="hero_card_sub">Apache-2.0 · free to use &amp; modify</p>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
 
     <section class="section notice">
       <div class="container notice-panel">
-        <p>
+        <p data-i18n-html="notice_html">
           <strong>Not an official utility product</strong> unless adopted by a grid operator.
           Operational models must be validated with local operations before production use.
           Seeded example sites follow an isolated-grid layout (thermal, wind, solar, storage).
@@ -120,37 +120,37 @@
     <section class="section features" id="features">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Everything a field crew needs offline</h2>
-          <p class="section-lede">
+          <p class="eyebrow" data-i18n="feat_eyebrow">Capabilities</p>
+          <h2 data-i18n="feat_h2">Everything a field crew needs offline</h2>
+          <p class="section-lede" data-i18n="feat_lede">
             Log generation, open work orders with photos, export reports, and optionally read
-            local Modbus gateways — without waiting on the mainland WAN.
+            local Modbus gateways - without waiting on the mainland WAN.
           </p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <h3>Generation dashboard</h3>
-            <p>kWh by source with period filters: today, 7 days, 30 days, month, or all time. Built for Rodrigues local day (UTC+4).</p>
+            <h3 data-i18n="feat_dash_h">Generation dashboard</h3>
+            <p data-i18n="feat_dash_p">kWh by source with period filters: today, 7 days, 30 days, month, or all time. Built for Rodrigues local day (UTC+4).</p>
           </article>
           <article class="feature-card">
-            <h3>Offline logging</h3>
-            <p>Every write hits Room SQLite immediately. Correct mistakes in the field. Fully usable with no network.</p>
+            <h3 data-i18n="feat_off_h">Offline logging</h3>
+            <p data-i18n="feat_off_p">Every write hits Room SQLite immediately. Correct mistakes in the field. Fully usable with no network.</p>
           </article>
           <article class="feature-card">
-            <h3>Maintenance work orders</h3>
-            <p>Create, filter, and move WOs through a status lifecycle. Attach camera or gallery photos on site.</p>
+            <h3 data-i18n="feat_wo_h">Maintenance work orders</h3>
+            <p data-i18n="feat_wo_p">Create, filter, and move WOs through a status lifecycle. Attach camera or gallery photos on site.</p>
           </article>
           <article class="feature-card">
-            <h3>Asset registry</h3>
-            <p>Seeded for Pointe Monnier, Port Mathurin, Grenade, Trèfles wind, SSDG/MSDG pool, and more.</p>
+            <h3 data-i18n="feat_asset_h">Asset registry</h3>
+            <p data-i18n="feat_asset_p">Seeded for Pointe Monnier, Port Mathurin, Grenade, Trèfles wind, SSDG/MSDG pool, and more.</p>
           </article>
           <article class="feature-card">
-            <h3>Share exports</h3>
-            <p>CSV, JSON, and PDF via the Android share sheet for email, USB hand-off, or later aggregation.</p>
+            <h3 data-i18n="feat_export_h">Share exports</h3>
+            <p data-i18n="feat_export_p">CSV, JSON, and PDF via the Android share sheet for email, USB hand-off, or later aggregation.</p>
           </article>
           <article class="feature-card">
-            <h3>Modbus TCP (optional)</h3>
-            <p>Read-only holding registers from local gateways on LAN/VPN — never expose industrial protocols to the public internet.</p>
+            <h3 data-i18n="feat_modbus_h">Modbus TCP (optional)</h3>
+            <p data-i18n="feat_modbus_p">Read-only holding registers from local gateways on LAN/VPN - never expose industrial protocols to the public internet.</p>
           </article>
         </div>
       </div>
@@ -159,20 +159,20 @@
     <section class="section sites" id="sites">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Sample isolated-grid layout</p>
-          <h2>Built for the isolated grid</h2>
-          <p class="section-lede">
-            Thermal, wind, solar and storage across the island — field sites often have intermittent
+          <p class="eyebrow" data-i18n="sites_eyebrow">Sample isolated-grid layout</p>
+          <h2 data-i18n="sites_h2">Built for the isolated grid</h2>
+          <p class="section-lede" data-i18n="sites_lede">
+            Thermal, wind, solar and storage across the island - field sites often have intermittent
             connectivity, so offline-first is mandatory. The same toolkit is intended for other
             isolated and rural grids.
           </p>
         </div>
         <div class="site-grid">
-          <article class="site-card"><h3>Pointe Monnier</h3><p>Thermal + BESS (~1.5&nbsp;MW storage context)</p></article>
-          <article class="site-card"><h3>Port Mathurin</h3><p>Thermal / operations hub</p></article>
-          <article class="site-card"><h3>Grenade</h3><p>Wind + PV farm context</p></article>
-          <article class="site-card"><h3>Trèfles</h3><p>Wind generation</p></article>
-          <article class="site-card"><h3>SSDG / MSDG pool</h3><p>Distributed small generators</p></article>
+          <article class="site-card"><h3>Pointe Monnier</h3><p data-i18n="site_pm">Thermal + BESS (~1.5&nbsp;MW storage context)</p></article>
+          <article class="site-card"><h3>Port Mathurin</h3><p data-i18n="site_port">Thermal / operations hub</p></article>
+          <article class="site-card"><h3>Grenade</h3><p data-i18n="site_grenade">Wind + PV farm context</p></article>
+          <article class="site-card"><h3>Trèfles</h3><p data-i18n="site_trefles">Wind generation</p></article>
+          <article class="site-card"><h3>SSDG / MSDG pool</h3><p data-i18n="site_ssdg">Distributed small generators</p></article>
         </div>
       </div>
     </section>
@@ -180,44 +180,44 @@
     <section class="section how" id="how">
       <div class="container how-grid">
         <div>
-          <p class="eyebrow">How it works</p>
-          <h2>From phone to structured report</h2>
+          <p class="eyebrow" data-i18n="how_eyebrow">How it works</p>
+          <h2 data-i18n="how_h2">From phone to structured report</h2>
           <ol class="steps">
             <li>
               <span class="step-n">1</span>
               <div>
-                <h3>Install the field APK</h3>
+                <h3 data-i18n="how_1_h">Install the field APK</h3>
                 <p>
-                  Side-load the signed evaluation APK from
+                  <span data-i18n="how_1_before">Side-load the signed evaluation APK from</span>
                   <a data-dl-link href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">grid.mkweli.tech</a>
-                  (Android 8+). Operator profile auto-fills “recorded by”.
+                  <span data-i18n="how_1_after">(Android 8+). Operator profile auto-fills “recorded by”.</span>
                 </p>
               </div>
             </li>
             <li>
               <span class="step-n">2</span>
               <div>
-                <h3>Log generation &amp; work</h3>
-                <p>Capture kWh by source and open maintenance tickets with photos while offline.</p>
+                <h3 data-i18n="how_2_h">Log generation &amp; work</h3>
+                <p data-i18n="how_2_p">Capture kWh by source and open maintenance tickets with photos while offline.</p>
               </div>
             </li>
             <li>
               <span class="step-n">3</span>
               <div>
-                <h3>Export or sync</h3>
-                <p>Share CSV/JSON/PDF now; background sync to a future edge API when connectivity returns.</p>
+                <h3 data-i18n="how_3_h">Export or sync</h3>
+                <p data-i18n="how_3_p">Share CSV/JSON/PDF now; background sync to a future edge API when connectivity returns.</p>
               </div>
             </li>
           </ol>
         </div>
         <aside class="compare-panel">
-          <h3>Complements, does not replace</h3>
+          <h3 data-i18n="compare_h">Complements, does not replace</h3>
           <ul>
-            <li><strong>MoKouran</strong> — customer bills · this app is operator field O&amp;M</li>
-            <li><strong>ADMS / SCADA</strong> — central control · this app is offline site logging</li>
-            <li><strong>Smart meters</strong> — customer metering · this app is source-level kWh + work orders</li>
+            <li data-i18n-html="compare_mok"><strong>MoKouran</strong> - customer bills · this app is operator field O&amp;M</li>
+            <li data-i18n-html="compare_adms"><strong>ADMS / SCADA</strong> - central control · this app is offline site logging</li>
+            <li data-i18n-html="compare_meters"><strong>Smart meters</strong> - customer metering · this app is source-level kWh + work orders</li>
           </ul>
-          <p class="compare-note">Designed for isolated and rural grids, not as a control-room replacement stack. No operator has adopted it yet.</p>
+          <p class="compare-note" data-i18n="compare_note">Designed for isolated and rural grids, not as a control-room replacement stack. No operator has adopted it yet.</p>
         </aside>
       </div>
     </section>
@@ -225,19 +225,20 @@
     <section class="section download" id="download">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Public pilot build</p>
-          <h2>Download the signed evaluation APK</h2>
-          <p class="section-lede">
-            Free side-load for Android 8+. Evaluation only — permanent in-app pilot banner,
+          <p class="eyebrow" data-i18n="dl_eyebrow">Public pilot build</p>
+          <h2 data-i18n="dl_h2">Download the signed evaluation APK</h2>
+          <p class="section-lede" data-i18n="dl_lede">
+            Free side-load for Android 8+. Evaluation only - permanent in-app pilot banner,
             PILOT-marked exports, and no claim of official utility endorsement.
           </p>
         </div>
         <div class="download-panel">
           <div class="download-main">
-            <p class="download-version">v0.3.3 · <code>mkweli-grid-0.3.3.apk</code> · hosted on grid.mkweli.tech</p>
+            <p class="download-version" data-i18n-html="dl_version">v0.3.3 · <code>mkweli-grid-0.3.3.apk</code> · hosted on grid.mkweli.tech</p>
             <a
               class="btn btn-primary btn-lg"
               data-dl-link
+              data-i18n="btn_dl_apk"
               href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk"
             >
               Download APK
@@ -248,26 +249,26 @@
               <code>86ef8a1bacf445fae712b8829420cba0f733e6e9cbc3761703b207bf1c994411</code>
             </p>
             <p class="download-url">
-              Direct APK:
+              <span data-i18n="dl_direct">Direct APK:</span>
               <a data-dl-link href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">
                 grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk
               </a>
             </p>
           </div>
           <aside class="download-limits">
-            <h3>Pilot limitations</h3>
+            <h3 data-i18n="dl_limits_h">Pilot limitations</h3>
             <ul>
-              <li>Not an official utility product</li>
-              <li>Offline-first; sync needs your edge URL</li>
-              <li>Photos stay on-device in this pilot</li>
-              <li>Modbus TCP is LAN / VPN only</li>
-              <li>Validate with local ops before production use</li>
+              <li data-i18n="dl_lim_1">Not an official utility product</li>
+              <li data-i18n="dl_lim_2">Offline-first; sync needs your edge URL</li>
+              <li data-i18n="dl_lim_3">Photos stay on-device in this pilot</li>
+              <li data-i18n="dl_lim_4">Modbus TCP is LAN / VPN only</li>
+              <li data-i18n="dl_lim_5">Validate with local ops before production use</li>
             </ul>
-            <h3>Install</h3>
+            <h3 data-i18n="dl_install_h">Install</h3>
             <ol>
-              <li>Allow “Install unknown apps” for your browser or file manager</li>
-              <li>Open the APK → Install</li>
-              <li>Settings → set operator name → optional demo data</li>
+              <li data-i18n="dl_inst_1">Allow “Install unknown apps” for your browser or file manager</li>
+              <li data-i18n="dl_inst_2">Open the APK → Install</li>
+              <li data-i18n="dl_inst_3">Settings → set operator name → optional demo data</li>
             </ol>
           </aside>
         </div>
@@ -277,16 +278,16 @@
     <section class="section contact" id="contact">
       <div class="container contact-panel">
         <div class="contact-copy">
-          <p class="eyebrow">Pilot &amp; partnership</p>
-          <h2>Bring the field toolkit to isolated-grid crews</h2>
-          <p>
+          <p class="eyebrow" data-i18n="contact_eyebrow">Pilot &amp; partnership</p>
+          <h2 data-i18n="contact_h2">Bring the field toolkit to isolated-grid crews</h2>
+          <p data-i18n="contact_p">
             Download the evaluation APK above, discuss a trial with operations, or explore hosting and
             edge-sync options. Built under Mkweli.tech by Gilbert Clement Bouic.
           </p>
           <div class="contact-actions">
-            <a class="btn btn-primary btn-lg" data-dl-link href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">Download evaluation APK</a>
+            <a class="btn btn-primary btn-lg" data-dl-link data-i18n="btn_dl_eval" href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">Download evaluation APK</a>
             <a class="btn btn-ghost light" href="mailto:support@mkweli.tech?subject=Mkweli%20Grid%20pilot">support@mkweli.tech</a>
-            <a class="btn btn-ghost light" href="https://mkweli.tech/">mkweli.tech hub</a>
+            <a class="btn btn-ghost light" href="https://mkweli.tech/" data-i18n="btn_hub">mkweli.tech hub</a>
           </div>
         </div>
       </div>
@@ -303,21 +304,21 @@
             <span>Grid</span>
           </span>
         </a>
-        <p>Offline field toolkit for isolated and rural grids. Evaluation APK.</p>
+        <p data-i18n="footer_tag">Offline field toolkit for isolated and rural grids. Evaluation APK.</p>
       </div>
       <div class="footer-col">
-        <h4>Product</h4>
-        <a href="#features">Features</a>
-        <a href="#sites">Sites</a>
-        <a href="#download">Download APK</a>
-        <a data-dl-link href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">Download v0.3.3</a>
-        <a href="#contact">Contact</a>
+        <h4 data-i18n="footer_product">Product</h4>
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#sites" data-i18n="nav_sites">Sites</a>
+        <a href="#download" data-i18n="footer_dl_apk">Download APK</a>
+        <a data-dl-link data-i18n="footer_dl_ver" href="https://grid.mkweli.tech/downloads/mkweli-grid-0.3.3.apk">Download v0.3.3</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Mkweli network</h4>
+        <h4 data-i18n="footer_network">Mkweli network</h4>
         <a href="https://mkweli.tech/" class="mkweli-parent-link">
           <img src="assets/mkweli-mark-on-dark.png" alt="" height="18" width="18" />
-          A Mkweli product
+          <span data-i18n="footer_product_of">A Mkweli product</span>
         </a>
         <a href="https://mkweli.tech/">mkweli.tech</a>
         <a href="https://aml.mkweli.tech/">Mkweli AML</a>
@@ -325,7 +326,7 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© <span id="year">2026</span> Mkweli. Not an official utility product unless adopted.</p>
+      <p>© <span id="year">2026</span> <span data-i18n="footer_legal">Mkweli. Not an official utility product unless adopted.</span></p>
     </div>
   </footer>
 
