@@ -24,7 +24,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 
 body {
   margin: 0;
@@ -35,7 +35,8 @@ body {
   background:
     radial-gradient(1000px 500px at 85% -5%, rgba(20, 145, 155, 0.18), transparent 55%),
     radial-gradient(800px 420px at -5% 30%, rgba(224, 122, 95, 0.1), transparent 50%),
-    var(--bg);
+  var(--bg);
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
 
